@@ -1,18 +1,27 @@
 {
   "manifest_version": 3,
-  "name": "Shur ocultador de pesados",
+  "name": "XenForo User Hider",
   "version": "1.0",
   "description": "Oculta usuarios ignorados en XenForo.",
-  "permissions": ["storage", "scripting"],
-  "host_permissions": ["https://tu-xenforo.com/*"]
+  "permissions": [
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://tu-xenforo.com/*"
+  ],
   "options_page": "options.html",
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["https://tu-xenforo.com/*"],
-      "js": ["content.js"]
+      "matches": [
+        "https://tu-xenforo.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
     }
   ]
 }
