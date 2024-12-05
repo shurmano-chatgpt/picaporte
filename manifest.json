@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Shur ocultador de pesados",
+  "version": "1.0",
+  "description": "Oculta usuarios ignorados en XenForo.",
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["https://shurmanos.com*"],
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://shurmanos.com*"],
+      "js": ["content.js"]
+    }
+  ]
+}
