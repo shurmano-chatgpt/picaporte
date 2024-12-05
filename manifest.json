@@ -4,14 +4,14 @@
   "version": "1.0",
   "description": "Oculta usuarios ignorados en XenForo.",
   "permissions": ["storage", "scripting"],
-  "host_permissions": ["https://shurmanos.com*"],
+  "host_permissions": ["https://tu-xenforo.com/*"]
   "options_page": "options.html",
   "background": {
     "service_worker": "background.js"
   },
   "content_scripts": [
     {
-      "matches": ["https://shurmanos.com*"],
+      "matches": ["https://tu-xenforo.com/*"],
       "js": ["content.js"]
     }
   ]
